@@ -1,0 +1,41 @@
+@import "../../app.scss";
+
+.navbar {
+  height: 100px;
+  background-color: #0d0d1f;
+
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: rebeccapurple;
+    height: 100%;
+
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
+    }
+
+    span {
+      // position: relative;
+      font-weight: bold;
+      font-size: 30px;
+      margin-left: 40px;
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  .social {
+    gap: 20px;
+    display: flex;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
